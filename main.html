@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ფილმების რეიტინგების შედარება</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="project">
+      <h1>ორი ერთნაირი ჟანრის ფილმის შედარება რეიტინგების მიხედვით</h1>
+      <p class="intro">
+        პროექტის მიზანია Rotten Tomatoes-ისა და IMDb-ის რეიტინგებზე დაყრდნობით
+        ორი სამეცნიერო ფანტასტიკის ჟანრის ფილმის მონაცემებზე დაფუძნებული
+        შედარება.
+      </p>
+
+      <div class="overview">
+        <div class="text">
+          <div class="section-title blue">
+            <h2>პროექტის აღწერა</h2>
+          </div>
+          <p>
+            კვლევის საგნად არჩეულია ორი სამეცნიერო ფანტასტიკის ჟანრის ფილმი —
+            <strong>Inception</strong> და <strong>Interstellar</strong>.
+            მიუხედავად იმისა, რომ ისინი ერთსა და იმავე ჟანრს ეკუთვნის, მათი
+            შეფასებები კრიტიკოსებსა და მაყურებელს შორის ხშირად განსხვავდება.
+          </p>
+
+          <div class="section-title green">
+            <h3>რატომ ავირჩიე ეს თემა?</h3>
+          </div>
+          <ul>
+            <li>ფილმები პოპულარულია და აქტიურად განიხილება საზოგადოებაში</li>
+            <li>Rotten Tomatoes და IMDb სანდო შეფასების წყაროებია</li>
+            <li>
+              შეფასებებს შორის განსხვავება საინტერესო ტენდენციებს აჩვენებს
+            </li>
+            <li>
+              პროექტი საშუალებას მაძლევს გამოვიყენო მონაცემთა ანალიზის უნარები
+            </li>
+          </ul>
+
+          <div class="section-title orange">
+            <h3>მონაცემების დამუშავება</h3>
+          </div>
+          <p>
+            მონაცემები შეგროვდა OMDb API-ის გამოყენებით. IMDb-ის რეიტინგი
+            გადაყვანილია 0–100 სკალაზე, რათა შესაძლებელი ყოფილიყო Rotten
+            Tomatoes-ის რეიტინგთან სამართლიანი შედარება. ასევე გამოითვალა
+            აბსოლუტური განსხვავება ორ პლატფორმას შორის.
+          </p>
+
+          <div class="section-title purple">
+            <h3>დასკვნა</h3>
+          </div>
+          <p>
+            პროექტის ფარგლებში შევისწავლე API-დან მონაცემების შეგროვება,
+            მონაცემების დამუშავება pandas ბიბლიოთეკით და ვიზუალიზაციების შექმნა
+            matplotlib-ის გამოყენებით. პროექტმა აჩვენა, რომ მონაცემთა ანალიზი
+            ეფექტური ინსტრუმენტია კულტურული თემების შესასწავლად.
+          </p>
+        </div>
+
+        <div class="images">
+          <img src="rt-vs-imdb.png" alt="Rotten Tomatoes vs IMDb" />
+          <img src="rating-difference.png" alt="რეიტინგებს შორის განსხვავება" />
+          <img src="final-comparison.png" alt="საბოლოო შედარება" />
+        </div>
+      </div>
+
+      <div class="tech">
+        <h2>გამოყენებული ტექნოლოგიები</h2>
+        <p>
+          Python (requests, pandas, matplotlib), Jupyter Notebook, HTML, CSS
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
